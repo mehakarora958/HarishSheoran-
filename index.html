@@ -8,6 +8,11 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <title>Harish Sheoran</title>
+  <style>
+    footer{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,11 +25,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          
-          <a class="nav-link active" aria-current="page" href="#">Blog</a>
-          <a class="nav-link" href="https://github.com/sheoranharis" target="_blank">Github</a>
+        <div class="navbar-nav ms-auto">
+
+          <a class="nav-link active" aria-current="page" href="#blog">Blog</a>
           <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="https://github.com/sheoranharis" target="_blank">Github</a>
           <a class="nav-link " href="https://twitter.com/sheoranharis" target="_blank">Twitter</a>
         </div>
       </div>
@@ -40,7 +45,19 @@
           <h1>
             <span class="text-warning">Hi there, I am Harish</span>
           </h1>
+
           <p class="my-4">Currently learning Web Dev & DevOps.</p>
+          <div class="h1">
+            <a href="https://twitter.com/sheoranharis" target="_blank" class="me-4 text-reset"><i
+                class="bi bi-twitter"></i></a>
+
+            <a href="https://github.com/sheoranharis" target="_blank" class="me-4 text-reset"><i
+                class="bi bi-github"></i></a>
+            <a href="mailto:webmaster@example.com" target="_blank" class="me-4 text-reset"><i
+                class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/harish-sheoran-986b1522b/" target="_blank" class="me-4 text-reset">
+              <i class="bi bi-linkedin"></i></a>
+          </div>
           <!--<button class="btn btn-primary btn-lg">Hello</button>-->
         </div>
         <img class="img-fluid w-50 " src="pexels-cottonbro-5483077.jpg" alt="404">
@@ -49,29 +66,32 @@
   </section>
 
 
-  <section class="bg-primary text-light p-5">
-    <div class="container">
-      <div class="d-md-flex justify-content-between align-items-center">
-        <h4 class="mb-3 mb-md-0">Contact me</h4>
-        <div class="h1">
-          <a href="https://twitter.com/sheoranharis" target="_blank" class="me-4 text-reset"><i
-              class="bi bi-twitter"></i></a>
 
-          <a href="https://github.com/sheoranharis" target="_blank" class="me-4 text-reset"><i
-              class="bi bi-github"></i></a>
-          <a href="mailto:webmaster@example.com" target="_blank" class="me-4 text-reset"><i
-              class="bi bi-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/harish-sheoran-986b1522b/" target="_blank" class="me-4 text-reset">
-            <i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <section class="p-5" id="blog">
     <div class="container">
+      <h1 class="text-center mb-3">Blogs</h1>
       <div class="row text-center g-4">
+
+        <div class="col-md">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+
+                <div class="h1 mb-3">
+                  <i class="bi bi-filetype-py"></i>
+                </div>
+                <h3 class="card-title mb-3">Build a Weight Converter</h3>
+                <p class="card-text text-sm-center">Build a Weight Converter web appliction using JavaScript
+                </p>
+                <a href="https://sheoranharis.hashnode.dev/weight-converter-javascript"
+                  class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md">
           <div class="card bg-dark text-light">
             <div class="card-body text-center">
@@ -122,11 +142,13 @@
           </div>
         </div>
 
+
+
       </div>
     </div>
   </section>
 
-  
+
   <section id="projects" class="p-5 bg-primary">
     <div class="container">
       <h2 class="text-center text-white">Projects</h2>
@@ -139,16 +161,18 @@
               <img src="" class="rounded-circle mb-3" alt="" />
               <h3 class="card-title mb-3">Weight Converter</h3>
               <p class="card-text">
-                <a href="weight.html"
-                class="btn btn-outline-primary">View</a>
+                <a href="weight.html" class="btn btn-outline-primary">View</a>
               </p>
-              <a href="https://github.com/sheoranharis/JavaScript-Projects"><i class="bi bi-github text-dark mx-1"></i></a>
+              <a href="https://github.com/sheoranharis/JavaScript-Projects"><i
+                  class="bi bi-github text-dark mx-1"></i></a>
             </div>
           </div>
         </div>
       </div>
-      
-      <!--  <div class="col-md-6 col-lg-3">
+    </div>
+  </section>
+
+  <!--  <div class="col-md-6 col-lg-3">
           <div class="card bg-light">
             <div class="card-body text-center">
               <img src="" class="rounded-circle mb-3" alt="" />
@@ -190,6 +214,18 @@
       </div>
     </div>
   </section>-->
+
+
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="d-flex justify-content-start"><i class="bi bi-envelope mx-3"></i> sheoranharis958@gmail.com</p>
+      
+
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
